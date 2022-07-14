@@ -33,7 +33,7 @@
 }
 
 .brickwall > .wall > .brick .card-container {
-	width: 469px;
+	max-width: 469px;
 }
 
 .brickwall > .wall > .brick .card-container .img-container {
