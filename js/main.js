@@ -10,7 +10,7 @@
 		}
 		
 		if (_reverse) {
-			Data = Data.reverse();
+			_data = _data.reverse();
 		}
 		
 		return {
