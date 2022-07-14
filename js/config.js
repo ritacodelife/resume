@@ -1,4 +1,5 @@
 const picturePath = './pic';
+const vertical = true;
 const reverse = false;
 const data = [
 	{
