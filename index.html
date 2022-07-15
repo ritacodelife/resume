@@ -16,7 +16,11 @@
 			<div class="brickwall" :class="{ 'direction-horizontal': !vertical, 'direction-vertical': vertical }">
 				<div v-for="(wall, wallIndex) in walls" class="wall">
 					<div v-for="(brick, brickIndex) in bricks(wallIndex)" class="brick">
-						<v-card :data="data[brick]"></v-card>
+						<v-card :img="data[brick].img"
+							:primary="data[brick].primary"
+							:secondary="data[brick].secondary"
+							:paragraph="data[brick].paragraph"
+							:url="data[brick].url"></v-card>
 					</div>
 				</div>
 			</div>

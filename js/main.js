@@ -10,7 +10,7 @@
 		}
 		
 		if (_reverse) {
-			_data = _data.reverse();
+			_data.reverse();
 		}
 		
 		return {
@@ -65,18 +65,26 @@
 
 	app.component('v-card', {
 		props: {
-			data: {
-				type: Object,
-				default: {},
+			img: {
+				type: String,
+				default: null,
 			},
-		},
-		data() {
-			const img = this.data.img ?? null;
-			const primary = this.data.primary ?? null;
-			const secondary = this.data.secondary ?? null;
-			const paragraph = this.data.paragraph ?? [];
-			const url = this.data.url ?? null;
-			return { img, primary, secondary, paragraph, url };
+			primary: {
+				type: String,
+				default: null,
+			},
+			secondary: {
+				type: String,
+				default: null,
+			},
+			paragraph: {
+				type: Array,
+				default: [],
+			},
+			url: {
+				type: String,
+				default: null,
+			},
 		},
 		template: /*html*/ `
 			<div class="card-container">
